@@ -18,7 +18,7 @@
   "cds.examples.crud.title": "CRUD books using @ngrx/entity & @ngrx/router-store",
   "cds.examples.crud.tooltip.delete": "Delete book",
   "cds.examples.crud.tooltip.deselect": "Deselect book",
-  "cds.examples.crud.tooltip.edit": "Edit book",
+  "cds.examples.crud.tooltip.edit": "Edit bookeroni",
   "cds.examples.form.autosave": "Auto Save",
   "cds.examples.form.error1": "is required",
   "cds.examples.form.error2": "should be valid",
