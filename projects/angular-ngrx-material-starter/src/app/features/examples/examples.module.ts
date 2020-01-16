@@ -29,6 +29,10 @@ import { ExamplesEffects } from './examples.effects';
 import { UserComponent } from './simple-state-management/components/user.component';
 import { UserService } from './simple-state-management/user.service';
 import { ElementsComponent } from './elements/elements.component';
+// Soccer Imports
+import { PremierLeagueContainerComponent } from './soccer/components/premier-league-container/premier-league-container.component';
+import { SoccerEffects } from './soccer/soccer.effects';
+import { SoccerService } from './soccer/soccer.service';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(
@@ -58,7 +62,8 @@ export function HttpLoaderFactory(http: HttpClient) {
       TodosEffects,
       StockMarketEffects,
       BooksEffects,
-      FormEffects
+      FormEffects,
+      SoccerEffects
     ])
   ],
   declarations: [
@@ -72,9 +77,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormComponent,
     NotificationsComponent,
     UserComponent,
-    ElementsComponent
+    ElementsComponent,
+    PremierLeagueContainerComponent
   ],
-  providers: [StockMarketService, UserService]
+  providers: [StockMarketService, UserService, SoccerService]
 })
 export class ExamplesModule {
   constructor() {}

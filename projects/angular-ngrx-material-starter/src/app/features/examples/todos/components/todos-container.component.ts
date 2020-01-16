@@ -16,7 +16,7 @@ import { Todo, TodosFilter } from '../todos.model';
 import { State } from '../../examples.state';
 
 @Component({
-  selector: 'anms-todos',
+  selector: 'cds-todos',
   templateUrl: './todos-container.component.html',
   styleUrls: ['./todos-container.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -56,7 +56,7 @@ export class TodosContainerComponent implements OnInit {
   onAddTodo() {
     this.store.dispatch(todoActions.actionTodosAdd(this.newTodo));
     const addedMessage = this.translateService.instant(
-      'anms.examples.todos.added.notification',
+      'cds.examples.todos.added.notification',
       { name: this.newTodo }
     );
     this.notificationService.info(addedMessage);
@@ -66,11 +66,11 @@ export class TodosContainerComponent implements OnInit {
   onToggleTodo(todo: Todo) {
     this.store.dispatch(todoActions.actionTodosToggle({ id: todo.id }));
     const newStatus = this.translateService.instant(
-      `anms.examples.todos.filter.${todo.done ? 'active' : 'done'}`
+      `cds.examples.todos.filter.${todo.done ? 'active' : 'done'}`
     );
-    const undo = this.translateService.instant('anms.examples.todos.undo');
+    const undo = this.translateService.instant('cds.examples.todos.undo');
     const toggledMessage = this.translateService.instant(
-      'anms.examples.todos.toggle.notification',
+      'cds.examples.todos.toggle.notification',
       { name: todo.name }
     );
 
@@ -87,7 +87,7 @@ export class TodosContainerComponent implements OnInit {
   onRemoveDoneTodos() {
     this.store.dispatch(todoActions.actionTodosRemoveDone());
     const removedMessage = this.translateService.instant(
-      'anms.examples.todos.remove.notification'
+      'cds.examples.todos.remove.notification'
     );
     this.notificationService.info(removedMessage);
   }
@@ -95,10 +95,10 @@ export class TodosContainerComponent implements OnInit {
   onFilterTodos(filter: TodosFilter) {
     this.store.dispatch(todoActions.actionTodosFilter({ filter }));
     const filterToMessage = this.translateService.instant(
-      'anms.examples.todos.filter.notification'
+      'cds.examples.todos.filter.notification'
     );
     const filterMessage = this.translateService.instant(
-      `anms.examples.todos.filter.${filter.toLowerCase()}`
+      `cds.examples.todos.filter.${filter.toLowerCase()}`
     );
     this.notificationService.info(`${filterToMessage} ${filterMessage}`);
   }

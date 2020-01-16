@@ -6,11 +6,12 @@
 const packageJson = require('../../../../package.json');
 
 export const environment = {
-  appName: 'Angular Ngrx Material Starter',
+  appName: 'Clear Data Sports',
   envName: 'DEV',
   production: false,
   test: false,
   i18nPrefix: '',
+  apiUrl: 'http://localhost:8000/api',
   versions: {
     app: packageJson.version,
     angular: packageJson.dependencies['@angular/core'],
