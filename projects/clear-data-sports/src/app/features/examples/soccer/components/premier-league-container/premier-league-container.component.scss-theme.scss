@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+
+@mixin cds-premier-league-container-component-theme($theme) {
+  $warn: map-get($theme, warn);
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  cds-premier-league-container {
+    .mat-header-row {
+      background: mat-color($primary, 800);
+    }
+  }
+}

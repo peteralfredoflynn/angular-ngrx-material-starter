@@ -1,0 +1,28 @@
+<section class="signup-form">
+  <form fxLayout="column" fxLayoutAlign="center center">
+    <mat-form-field>
+      <input type="email" matInput placeholder="Your email">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="email" matInput placeholder="Your password">
+    </mat-form-field>
+  </form>
+
+</section>
+
+<!--<section id="container">-->
+<!--  <div id="child1" class="child"></div>-->
+<!--  <div id="child2" class="child"></div>-->
+<!--  <div id="child3" class="child"></div>-->
+<!--</section>-->
+
+<section class="test-grounds">
+  <mat-form-field>
+    <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of options" [value]="option">
+        {{ option }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</section>

@@ -1,0 +1,5 @@
+$cds-primary: mat-palette($mat-light-blue, 800, 300, 900);
+$cds-accent: mat-palette($mat-deep-orange);
+$cds-warn: mat-palette($mat-pink, 600);
+
+$cds-theme: mat-light-theme($cds-primary, $cds-accent, $cds-warn);

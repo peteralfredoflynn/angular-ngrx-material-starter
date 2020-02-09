@@ -1,0 +1,34 @@
+.signup-form {
+  //width: 300px;  // a width that will look good on desktop and mobile
+}
+
+mat-form-field {
+  width: 300px;
+} // cool! Target mat elements directly
+
+// FLEX BOX EXAMPLES
+//#container {
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: flex-start;  // main axis (top to bottom)
+//  align-items: center;  // cross axis
+//  height: 700px;
+//  border: 1px solid lightgray;
+//}
+//
+//.child {
+//  width: 200px;
+//  height: 200px;
+//}
+//
+//#child1 {
+//  background: deeppink;
+//}
+//
+//#child2 {
+//  background: deepskyblue;
+//}
+//
+//#child3 {
+//  background: lightgreen;
+//}

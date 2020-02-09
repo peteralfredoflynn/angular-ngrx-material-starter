@@ -1,0 +1,100 @@
+// hide table when loading
+.hidden {
+  display: none;
+}
+
+.main-heading {
+  text-transform: uppercase;
+  margin: 0 0 20px 20px;
+}
+
+//.premier-league-logo {
+//  width: 150px;
+//  margin-left: 20px;
+//  margin-bottom: 20px;
+//}
+
+// SIDENAV STYLES
+mat-drawer-container {
+  min-height: 100vh;
+}
+mat-icon {
+  padding-right: 2px;
+  font-size: 18px;
+}
+//mat-drawer {
+//  height: 100%;
+//}
+//mat-drawer-content {
+//  min-height: 400px;
+//}
+.panel-title-text {
+  margin-left: 2px;
+  margin-top: 4px;
+}
+
+//.mat-expansion-panel.mat-expanded {
+//  background: rgba(89, 183, 226, 0.10);
+//}
+////////// END SIDENAV
+
+// TABLE STYLES
+.table-container {
+  padding: 10px;
+}
+mat-header-row {
+  background: lighten(black, 90%);
+  min-height: 42px;
+}
+
+mat-header-cell {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+mat-cell {
+  word-wrap: normal;
+}
+
+// Target by .mat-column-"column-name"
+.mat-column-club,
+.mat-column-opponent {
+  flex: 7%;
+  padding-right: 20px;
+}
+
+.mat-column-name {
+  flex: 7%;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.img-logo {
+  width: 30px;
+  padding-right: 10px;
+}
+
+// Goal Columkn
+.goal-5 {
+  color: #0091ea;
+}
+
+.goal-4 {
+  color: #4caf50;
+}
+
+.goal-3 {
+  color: #8bc34a;
+}
+
+.goal-2 {
+  color: #afb42b;
+}
+
+.goal-1 {
+  color: #fb8c00;
+}
+
+.goal-0 {
+  color: #e53935;
+} // END TABLE STYLES
